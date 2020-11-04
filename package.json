@@ -1,6 +1,26 @@
 {
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.12",
     "react-router-bootstrap": "^0.25.0",
     "react-router-dom": "^5.2.0"
+  },
+  "name": "proshop",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/AdrianD94/proshop.git",
+  "author": "adyy <ady.drozman2007@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
   }
 }
